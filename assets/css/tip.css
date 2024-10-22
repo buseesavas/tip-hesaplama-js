@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #c5e4e7;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.logo {
+  margin-inline: auto;
+  padding-block: 30px;
+}
+
+h5 {
+  color: #5e7a7d;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+}
+
+.bill-input input,
+.select-tip-input input,
+.number-of-people input {
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  color: #00474b;
+  font-family: 'Space Mono';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: right;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.bill-input input:focus,
+.select-tip-input input:focus,
+.number-of-people input:focus {
+  color: #00474b;
+  border: 2px solid #26c2ae;
+}
+
+.splitter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.calculateBtn, .resetBtn {
+  background-color: #26c2ae;
+  color: #00474b;
+  font-family: "Space Mono";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding-block: 9px;
+}
+
+.resetBtn {
+  margin-top: 32px;
+}
+
+.calculated-amount {
+  background-color: #00474B;
+  padding-top: 39px;
+  padding-inline: 24px;
+  padding-bottom: 24px;
+  margin-top: 32px;
+  border-radius: 15px;
+}
+
+.tip-amount, .total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tip-amount {
+  margin-bottom: 20px;
+}
+
+h4 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Mono';
+font-size: 16px;
+font-weight: 700;
+line-height: 23.7px;
+text-align: left;
+color: #FFFFFF;
+}
+
+h4 span {
+font-size: 13px;
+line-height: 19.25px;
+color: #7F9D9F;
+}
+
+.calculated-amount p{
+  font-family: 'Space Mono';
+font-size: 32px;
+font-weight: 700;
+line-height: 47.39px;
+letter-spacing: -0.6666666865348816px;
+text-align: right;
+color: #26C2AE;
+}
+
+@media (width >= 1440px) {
+  .container {
+    width: 920px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 32px 43px 0px #4FA6AF33;
+    border-radius: 25px;
+    margin-bottom: 240px;
+  }
+
+  .splitter-box {
+    width: 379px;
+  }
+
+  .calculated-amount {
+    width: 413px;
+    margin-top: 0px;
+    padding: 40px;
+  }
+
+  .resetBtn {
+    margin-top: 120px;
+  }
+
+  .tip-amount {
+    margin-bottom: 41px;
+  }
+
+  .logo {
+    margin-top: 163px;
+    padding-block: 0px;
+    margin-bottom: 88px;
+  }
+}

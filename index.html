@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Hesaplayıcı</title>
+  <script src="assets/js/tip.js" defer></script>
+  <link rel="stylesheet" href="assets/css/tip.css">
+</head>
+<body>
+  <img class="logo" src="assets/images/splitter-logo.svg" alt="">
+  <div class="container">
+    <div class="splitter-box">
+      <div class="bill-input">
+        <h5>Bill</h5>
+        <input id="billInput" type="text" value="">
+      </div>
+      <div class="select-tip-input">
+        <h5>Select Tip %</h5>
+        <input id="selectTip" type="text" value="">
+      </div>
+      <div class="number-of-people">
+        <h5>Number Of People</h5>
+        <input id="numberOfPeople" type="text" value="">
+      </div>
+      <button class="calculateBtn" id="calculateBtn">Hesapla</button>
+    </div>
+    <div class="calculated-amount">
+      <div class="tip-amount">
+        <h4>Tip Amount <span>/ person</span></h4>
+        <p><span id="tipAmountText">0</span></p>
+      </div>
+      <div class="total">
+        <h4>Total <span>/ person</span></h4>
+        <p><span id="totalText">0</span></p>
+      </div>
+      <button class="resetBtn" id="resetBtn">RESET</button>
+    </div>
+  </div>
+</body>
+</html>
